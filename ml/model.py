@@ -3,12 +3,6 @@ from __future__ import annotations
 import joblib
 from pathlib import Path
 from sklearn.metrics import fbeta_score, precision_score, recall_score
-from ml.data import process_data
-from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
-import numpy as np
-import pandas as pd
-from sklearn.base import BaseEstimator
 from sklearn.linear_model import LogisticRegression
 
 

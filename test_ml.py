@@ -47,7 +47,13 @@ def _make_tiny_df():
             "relationship": ["Not-in-family", "Husband", "Not-in-family", "Husband", "Wife"],
             "race": ["White", "White", "White", "Black", "Black"],
             "sex": ["Male", "Male", "Male", "Male", "Female"],
-            "native-country": ["United-States", "United-States", "United-States", "United-States", "Cuba"],
+            "native-country": [
+                "United-States",
+                "United-States",
+                "United-States",
+                "United-States",
+                "Cuba"
+            ],
             "salary": ["<=50K", ">50K", "<=50K", "<=50K", ">50K"],
         }
     )

@@ -78,5 +78,4 @@ async def post_inference(data: Data):
     else:
         _inference = pred
 
-    import numpy as np
     return {"result": apply_label(np.array([_inference]))}
