@@ -1,13 +1,14 @@
-# TODO: send a GET using the URL http://127.0.0.1:8000
-r = None  # Your code here
+import requests
 
-# TODO: print the status code
-# print()
-# TODO: print the welcome message
-# print()
+# Base URL for local API
+BASE_URL = "http://127.0.0.1:8000"
 
+response_get = requests.get(f"{BASE_URL}/")
 
-data = {
+print("Status Code:", response_get.status_code)
+print("Result:", response_get.json()["message"])
+
+sample_data = {
     "age": 37,
     "workclass": "Private",
     "fnlgt": 178356,
@@ -24,10 +25,7 @@ data = {
     "native-country": "United-States",
 }
 
-# TODO: send a POST using the data above
-r = None  # Your code here
+response_post = requests.post(f"{BASE_URL}/data/", json=sample_data)
 
-# TODO: print the status code
-# print()
-# TODO: print the result
-# print()
+print("Status Code:", response_post.status_code)
+print("Result:", response_post.json()["result"])
